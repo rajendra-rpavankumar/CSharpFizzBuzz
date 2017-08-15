@@ -10,14 +10,17 @@ namespace FizzBuzz1
     {
         static void Main(string[] args)
         {
-            string result = "";
+            //string result = "";
             for (int i = 1; i <= 100; i++)
             {
+                string result = "";
                 if (i % 3 == 0) result = "Fizz";
                 if (i % 5 == 0) result = result +"Buzz";
-                if (result.Length == 0) result += i;
+                //if (result.Length == 0) result += i;
+                if (result.Length == 0) result = i.ToString();
                 Console.WriteLine(result);
             }
+            Console.Read();
         }
     }
 }
